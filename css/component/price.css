@@ -1,0 +1,121 @@
+.assortment-price {
+  width: 100%;
+  margin-top: 10px;
+  /* background-color: aqua; */
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  padding: 13px 14px;
+  display: flex;
+  flex-flow: column;
+  gap: 12px;
+  h3 {
+    width: 100%;
+    height: 20px;
+    font-size: 18px;
+    color: #0a5abd;
+  }
+  .assortment-price-1 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+      color: gray;
+      font-size: 14px;
+      font-family: sansNum;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      span:nth-of-type(1) {
+        color: black;
+      }
+    }
+  }
+  .assortment-price-2 {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    span {
+      color: gray;
+      font-size: 14px;
+      font-family: sansNum;
+    }
+    .assortment-price-toman {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      span:nth-of-type(1) {
+        color: black;
+        font-size: 17px;
+        font-weight: 600;
+      }
+    }
+  }
+  .assortment-price-3 {
+    width: 100%;
+    height: 50px;
+    /* background-color: rgb(226, 117, 14); */
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+    .assortment-price-fline {
+      width: 100%;
+      /* height: 80%; */
+      display: flex;
+      align-items: center;
+      div:nth-of-type(1) {
+        background-color: blue;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+      }
+      div:nth-of-type(3) {
+        background-color: blue;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+      }
+      div:nth-of-type(2) {
+        background-color: blue;
+        width: 85%;
+        height: 5px;
+      }
+    }
+    .assortment-price-eline {
+      width: 100%;
+      /* height: 20%; */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      span {
+        color: rgba(0, 0, 0, 0.856);
+        font-size: 12px;
+      }
+    }
+  }
+  button {
+    color: #fff;
+    background-color: #0a5abd;
+    width: 100%;
+    height: 42px;
+    border: none;
+    border-radius: 12px;
+    font-family: shabnam;
+    transition: 300ms;
+    &:hover {
+      background-color: #0a295a;
+    }
+  }
+}

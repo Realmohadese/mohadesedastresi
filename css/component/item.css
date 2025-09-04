@@ -1,0 +1,109 @@
+.items-item {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  row-gap: 15px;
+  .items-item2 {
+    width: 32.5%;
+    height: 520px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    .rang {
+      position: absolute;
+      top: 9px;
+      left: 9px;
+      content: "";
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: black;
+      z-index: 2;
+    }
+    .rang1 {
+      position: absolute;
+      top: 9px;
+      left: 25px;
+      content: "";
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: blue;
+      z-index: 2;
+    }
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: 67%;
+    }
+    .items-item-text {
+      width: 100%;
+      height: 20%;
+      display: flex;
+      flex-flow: column;
+      text-align: center;
+      justify-content: baseline;
+      gap: 8px;
+      color: rgb(46, 46, 46);
+      padding-bottom: 13px;
+      row-gap: 10px;
+      font-size: 14px;
+      font-family: shabnam, sans-serif;
+      padding: 2px 10px;
+      p:nth-of-type(1) {
+        font-size: 12px;
+      }
+      p:nth-of-type(2) {
+        line-height: 25px;
+      }
+    }
+    .items-item-price {
+      width: 100%;
+      height: 13%;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: end;
+      align-items: end;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      padding-left: 10px;
+      padding-bottom: 10px;
+      p {
+        color: gray;
+        text-decoration: line-through;
+        font-size: 14px;
+        font-family: sansNum;
+        display: flex;
+      }
+      .price-toman {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        left: 15px;
+        span:nth-of-type(1) {
+          font-family: sansNum;
+          color: #0A5ABD;
+          font-size: 17px;
+          font-weight: 600;
+        }
+        span:nth-of-type(2) {
+          font-family: shabnam, sans-serif;
+          color: #2b2a2ae0;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+    &:hover {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    }
+    &:hover .items-item-text p:nth-of-type(2) {
+      color: rgba(0, 0, 255, 0.651);
+    }
+    &:hover .items-item-text p:nth-of-type(3) {
+      color: rgba(0, 0, 255, 0.651);
+    }
+  }
+
+}

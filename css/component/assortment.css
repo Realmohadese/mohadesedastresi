@@ -1,0 +1,35 @@
+.assortment-sort {
+  top: 150px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  padding: 15px 15px;
+  display: flex;
+  flex-flow: column;
+  gap: 13px;
+  h2 {
+    color: #0a5abd;
+    font-size: 18px;
+  }
+  .assortment-sort-main {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 8px;
+    a {
+      border-radius: 13px;
+      font-size: 14px;
+      padding: 10px 10px;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      background-color: rgb(248, 247, 247);
+      height: 38px;
+      color: black;
+      &:hover {
+        background-color: #e9e9eb;
+      }
+    }
+  }
+}

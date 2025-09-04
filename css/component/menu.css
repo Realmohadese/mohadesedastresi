@@ -1,0 +1,247 @@
+.header-menu {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: space-evenly;
+  .header-menu-nav {
+    width: 82.5%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-left: 12px;
+    font-family: shabnam, sans-serif;
+    .header-menu-nav-item {
+      width: fit-content;
+      height: 100%;
+      position: relative;
+      .nav-item-link {
+        width: 100%;
+        height: 100%;
+        display: block;
+        box-sizing: border-box;
+        line-height: 55px;
+        text-decoration: none;
+        font-family: shabnam;
+        font-size: 14px;
+        color: gray;
+        transition: 100ms;
+        position: relative;
+        svg {
+          margin-right: 5px;
+        }
+
+        &:hover {
+          color: #fe7e76;
+          border-bottom: 3px #fe5f55 solid;
+        }
+        &:hover .svg {
+          fill: #fe7e76;
+        }
+      }
+      .nav-item-submenu {
+        width: 21vw;
+        top: 55px;
+        background-color: #fff;
+        display: flex;
+        display: none;
+        flex-flow: column wrap;
+        position: absolute;
+        transition: 300ms;
+        padding-top: 10px;
+        border: 1px solid rgb(240, 240, 255);
+        .submenu-items {
+          display: flex;
+          flex-flow: row wrap;
+          width: 100%;
+          height: 43px;
+          text-align: center;
+          position: relative;
+          font-size: 12px;
+          align-items: center;
+          padding-right: 10px;
+          color: gray;
+          &:hover {
+            background-color: #f5f5f5;
+            color: #115cbd;
+            cursor: pointer;
+          }
+          .submenu-items-item {
+            width: 21vw;
+            left: 321px;
+            top: 0px;
+            background-color: #fff;
+            display: flex;
+            display: none;
+            flex-flow: column wrap;
+            position: absolute;
+            transition: 300ms;
+            .submenu-items-item2 {
+              display: flex;
+              flex-flow: row wrap;
+              width: 100%;
+              height: 43px;
+              text-align: center;
+              position: relative;
+              font-size: 12px;
+              align-items: center;
+              padding-right: 10px;
+              color: gray;
+              &:hover {
+                background-color: #f5f5f5;
+                color: #115cbd;
+                cursor: pointer;
+              }
+            }
+          }
+          .submenu-items-taj {
+            width: 21vw;
+            right: 321px;
+            top: 0px;
+            background-color: #fff;
+            display: flex;
+            display: none;
+            flex-flow: column wrap;
+            position: absolute;
+            transition: 300ms;
+            .submenu-items-taj-item {
+              display: flex;
+              flex-flow: row wrap;
+              width: 100%;
+              height: 43px;
+              text-align: center;
+              position: relative;
+              font-size: 12px;
+              align-items: center;
+              padding-right: 10px;
+              color: gray;
+              &:hover {
+                background-color: #f5f5f5;
+                color: #115cbd;
+                cursor: pointer;
+              }
+            }
+          }
+          .submenu-items-ada {
+            width: 21vw;
+            right: 321px;
+            top: 0px;
+            background-color: #fff;
+            display: flex;
+            display: none;
+            flex-flow: column wrap;
+            position: absolute;
+            transition: 300ms;
+            .submenu-items-ada-item {
+              display: flex;
+              flex-flow: row wrap;
+              width: 100%;
+              height: 43px;
+              text-align: center;
+              position: relative;
+              font-size: 12px;
+              align-items: center;
+              padding-right: 10px;
+              color: gray;
+              &:hover {
+                background-color: #f5f5f5;
+                color: #115cbd;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          display: block;
+        }
+        #batri {
+          display: flex;
+          flex-flow: row;
+          justify-content: space-between;
+          &:hover .submenu-items-item {
+            display: flex;
+          }
+        }
+        #taj {
+          display: flex;
+          flex-flow: row;
+          justify-content: space-between;
+          &:hover .submenu-items-taj {
+            display: flex;
+          }
+        }
+        #ada {
+          display: flex;
+          flex-flow: row;
+          justify-content: space-between;
+          &:hover .submenu-items-ada {
+            display: flex;
+          }
+        }
+      }
+      &:hover .nav-item-submenu {
+        display: flex;
+      }
+      .nav-item-submenu1 {
+        width: 1245px;
+        top: 55px;
+        left: 0px;
+        background-color: #fff;
+        display: flex;
+        display: none;
+        flex-flow: column;
+        position: absolute;
+        transition: 300ms;
+        padding-top: 10px;
+        border: 0.5px solid rgb(226, 226, 248);
+        .nav-item-submenu1-item1 {
+          width: 100%;
+          display: flex;
+          flex-flow: row wrap;
+          .submenu-items-page {
+            width: 20%;
+            display: flex;
+            flex-flow: row wrap;
+            border-right: 0.5px solid rgb(226, 226, 248);
+            border-bottom: 0.5px solid rgb(226, 226, 248);
+
+            .submenu-items {
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: space-between;
+              width: 100%;
+              height: 35px;
+              position: relative;
+              font-size: 12px;
+              align-items: center;
+              padding-right: 5px;
+              padding-left: 5px;
+              color: gray;
+              &:hover {
+                background-color: #f5f5f5;
+                color: #115cbd;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+        .nav-item-submenu1-item2 {
+          width: 100%;
+          display: flex;
+          flex-flow: row;
+          margin: 10px 5px;
+          color: #fe5f55;
+          font-size: 13px;
+          &:hover .other-brands,
+          img {
+            cursor: pointer;
+          }
+        }
+      }
+      &:hover .nav-item-submenu1 {
+        display: flex;
+      }
+    }
+  }
+}

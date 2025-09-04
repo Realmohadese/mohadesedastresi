@@ -1,0 +1,67 @@
+.categori {
+  width: 100%;
+  height: 320px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  h1 {
+    font-family: shabnam;
+    font-size: 25px;
+    text-align: center;
+    width: fit-content;
+    margin: 25px auto;
+  }
+  .categori-slider {
+    width: 100%;
+    height: 235px;
+    .swiper {
+      width: 80%;
+      height: 75%;
+      padding-left: 10px;
+      padding-right: 10px;
+      .swiper-button-prev,
+      .swiper-button-next {
+        top: 100px;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .swiper-button-prev::after,
+      .swiper-button-next::after {
+        font-size: 11px;
+        color: rgb(108, 107, 107);
+        font-weight: 800;
+      }
+      .swiper-button-next {
+        left: 0px;
+      }
+      .swiper-button-prev {
+        right: 0px;
+      }
+    }
+    .swiper-slide {
+      width: 185px;
+      height: 185px;
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+.Registration {
+  margin: 120px auto;
+  width: 370px;
+  height: 450px;
+  background-color: #f7f8fa;
+  border-radius: 10px;
+  font-family: shabnam, sans-serif;
+  .Registration-logo {
+    width: 100%;
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    img {
+      width: 45%;
+    }
+  }
+  .Registration-main {
+    width: 93%;
+    height: 65%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+    .Registration-main-h2 {
+      width: 100%;
+      height: 5%;
+      font-weight: 300;
+      font-size: 12px;
+      padding-right: 20px;
+      font-weight: 400;
+    }
+    .Registration-main-p {
+      width: 100%;
+      height: 25%;
+      padding-top: 20px;
+      font-size: 14px;
+      line-height: 30px;
+      right: 25px;
+      margin-bottom: 30px;
+      padding-right: 20px;
+    }
+    .Registration-main-logo{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 130px;
+    left: 565px;
+    }
+
+    .Registration-main-input {
+      height: 13%;
+      width: 100%;
+      position: relative;
+      margin-bottom: 10px;
+      text-align: center;
+      #number {
+        outline: unset;
+        right: 25px;
+        width: 90%;
+        height: 100%;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        margin-bottom: 30px;
+        transition: 200ms;
+        &:focus{
+        box-shadow: 1px 2px 5px #9b9b9b;
+        }
+        &:focus ~ [for="number"] {
+        font-size: 12px;
+        top: -17px ;
+        z-index: 10;
+        color: rgb(48, 48, 48);
+        }
+      }
+      [for="number"] {
+        position: absolute;
+        z-index: 2;
+        top: 10px;
+        left: 250px;
+        width: 75px;
+        font-size: 14px;
+        transition: 200ms;
+        color: gray;
+      }
+    }
+    .Registration-main-button {
+      height: 13%;
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+      button {
+        width: 90%;
+        height: 100%;
+        border-radius: 12px;
+        border: none;
+        background-color: #80a9db;
+        color: #fff;
+        font-family: shabnam, sans-serif;
+      }
+    }
+    .Registration-main-privacy {
+      width: 100%;
+      height: 15%;
+      font-size: 11.5px;
+      right: 45px;
+      color: rgb(54, 54, 54);
+      margin-top: 10px;
+      text-align: center;
+      a {
+        color: rgb(47, 47, 253);
+        text-decoration: none;
+      }
+    }
+  }
+}

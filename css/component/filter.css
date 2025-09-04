@@ -1,0 +1,57 @@
+.assortment-filter {
+  width: 100%;
+  margin-top: 10px;
+  justify-content: space-between;
+  padding: 20px 20px;
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  h2 {
+    color: #0a5abd;
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  .assortment-filter-main {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15px;
+    .assortment-filter-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      span {
+        color: rgba(61, 61, 61, 0.767);
+        font-size: 14px;
+      }
+      input:nth-of-type(1) {
+        display: none;
+        &:checked + label {
+          background-color: #055ba2;
+        }
+        &:checked + label div {
+          transform: translateX(27px);
+        }
+      }
+      label {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        width: 52px;
+        height: 26px;
+        padding-right: 3px;
+        padding-left: 3px;
+        background-color: #ccc;
+        border-radius: 14px;
+        div {
+          width: 19px;
+          height: 19px;
+          background-color: #fff;
+          border-radius: 14px;
+          transition: 500ms;
+        }
+      }
+    }
+  }
+}

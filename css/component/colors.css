@@ -1,0 +1,115 @@
+.assortment-colors {
+  width: 100%;
+  height: 299px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  .assortment-colors-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 14px;
+    gap: 5px;
+    .color {
+      width: 100%;
+      height: 10%;
+      margin-bottom: 20px;
+      h3 {
+        width: 100%;
+        height: 100%;
+        color: #0d5abd;
+        padding: 15px;
+      }
+    }
+
+    .color-items {
+      width: 100%;
+      height: 90%;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      row-gap: 13px;
+      overflow: scroll;
+      padding: 16px;
+      .color-item {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        .color-item-1 {
+          width: 80%;
+          display: flex;
+          flex-flow: row;
+          align-items: center;
+          justify-content: center;
+          column-gap: 6px;
+          label {
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+            color: #494949;
+          }
+          input {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+          }
+        }
+        .color-item-2 {
+          width: 20%;
+          display: flex;
+          justify-content: end;
+          cursor: pointer;
+          a {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: 0.1px solid rgb(204, 203, 203);
+          }
+          .black {
+            background: #000;
+          }
+          .blue {
+            background: #0d5abd;
+          }
+          .brown {
+            background: brown;
+          }
+          .gold {
+            background: gold;
+          }
+          .gray {
+            background: gray;
+          }
+          .green {
+            background: green;
+          }
+          .orange {
+            background: orange;
+          }
+          .pink {
+            background: palevioletred;
+          }
+          .purple {
+            background: purple;
+          }
+          .red {
+            background: red;
+          }
+          .silver {
+            background: silver;
+          }
+          .white {
+            background: white;
+          }
+          .yellow {
+            background-color: yellow;
+          }
+        }
+      }
+    }
+  }
+}
